@@ -36,8 +36,8 @@ module.exports = function reader(buf) {
             subtitle.lines.push(new Buffer(lineBytes));
           emitter.emit('subtitle', subtitle);
         }
-        if (state == 'awaitingCue')
-          return emitter.emit('error', "Truncated last entry: missing cue");
+        //if (state == 'awaitingCue')
+        //  return emitter.emit('error', "Truncated last entry: missing cue");
         return emitter.emit('end');
       }
       

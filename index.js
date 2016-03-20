@@ -10,8 +10,7 @@ function convert(buf, defaultCodepageOverride, next) {
 
   var outputLines = [
   'WEBVTT',
-  '',
-  'NOTE Converted from .srt via srt2vtt: https://github.com/deestan/srt2vtt'
+  ''
   ];
 
   var r = reader(buf);
